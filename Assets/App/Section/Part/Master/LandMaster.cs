@@ -8,10 +8,10 @@ public class LandMaster : AbstractMaster
     {
         base.Initialize();
 
-        ElementTemplateAdd<ForestLand>();
+        /*ElementTemplateAdd<ForestLand>();
         ElementTemplateAdd<MountainLand>();
 
-        var tempLand0 = ElementCreate<ForestLand>();
+        var tempLand0 = ElementCreate<MountainLand>();
         var tempLand1 = ElementCreate<ForestLand>();
         var tempLand2 = ElementCreate<MountainLand>();
         var tempLand3 = ElementCreate<ForestLand>();
@@ -20,6 +20,7 @@ public class LandMaster : AbstractMaster
         ElementCreate(1);
         ElementCreate("ForestLand");
         ElementCreate("MountainLand");
+        */
     }
 
 }

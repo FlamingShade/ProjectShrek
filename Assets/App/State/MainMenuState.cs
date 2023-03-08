@@ -7,6 +7,10 @@ public class MainMenuState : AbstractState
     public override void StateEnter()
     {
         base.StateEnter();
+        var tempSection = AppStatic.SectionDirector.SectionGet<MainMenuSection>();
+        //tempSection.
+        //tempSection.LocationGeneration();
+        //Debug.Log($"enter GlobalMapState");
         Debug.Log($"enter MainMenuState");
     }
 

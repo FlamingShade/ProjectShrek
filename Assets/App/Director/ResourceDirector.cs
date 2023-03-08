@@ -2,19 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
-
+using System;
 public class ResourceDirector : AbstractDirector
 {
-    private List<LandInfo> _landInfoList = new List<LandInfo>();
-    //private List<UnitInfo> _unitInfoList = new List<UnitInfo>();
-    //private List<ItemInfo> _itemInfoList = new List<ItemInfo>();
+    private Dictionary<string, AbstractInfo> _infoDictionary = new Dictionary<string, AbstractInfo>();
+
     public override void Initialize()
     {
         base.Initialize();
-        var tempLandInfoArray = Resources.LoadAll<LandInfo>("LandInfo");
-        foreach (var tempLand in tempLandInfoArray)
+        ResourceInfoLoad<LandInfo>();
+        ResourceInfoLoad<FragmentInfo>();
+        ResourceInfoLoad<LocationInfo>();
+        ResourceInfoLoad<UnitInfo>();
+        ResourceInfoLoad<ItemInfo>();
+    }
+    public void ResourceInfoLoad<T>() where T : AbstractInfo
+    {
+        var tempType = typeof(T);
+        var tempInfoArray = Resources.LoadAll<T>(tempType.ToString());
+        foreach (var tempInfo in tempInfoArray)
         {
-            _landInfoList.Add(tempLand);
+            _infoDictionary.TryAdd(tempInfo.name, tempInfo);
         }
+    }
+    public AbstractInfo ResourceInfoGet(string tempInfoName) 
+    {
+        Debug.Log($"key {tempInfoName}");
+        _infoDictionary.TryGetValue(tempInfoName, out var tempInfo);
+        Debug.Log($"get {tempInfo}");
+        return tempInfo;
     }
 }

@@ -14,10 +14,10 @@ public class GlobalMapSection : AbstractSection
         ScenePart.SceneNameAdd(SceneDirector.SceneName.GlobalMapScene);
         ScenePart.StartingSceneSet(SceneDirector.SceneName.GlobalMapScene);
     }
-    public LocationElement LocationGeneration()
+    public AbstractLocation LocationGeneration()
     {   
         var tempLocationMaster = this.MasterPart.MasterGet<LocationMaster>();
-        var tempLocationElement = tempLocationMaster.ElementCreate<LocationElement>();
+        var tempLocationElement = tempLocationMaster.ElementCreate<FirstLocation>();
         tempLocationElement.AllZonesGeneration();
         return tempLocationElement;
     }

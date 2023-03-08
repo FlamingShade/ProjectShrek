@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class ForestLand : AbstractLand
 {
-   
-   public override void Initialize()
-   {
+    public override void Initialize()
+    {
         base.Initialize();
         LootSet<SwordWeapon>();
-
-   }
-
-
-   
+    }
 }

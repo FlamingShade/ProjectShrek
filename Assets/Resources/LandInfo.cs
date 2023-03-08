@@ -4,11 +4,12 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "LandInfo", menuName = "Gameplay/LandInfo/New LandInfo")]
 
-public class LandInfo : ScriptableObject
+public class LandInfo : AbstractInfo
 {
-     [SerializeField] private string _id;
-    [SerializeField] private string _landName;
-    [SerializeField] private GameObject _prefab;
+    [SerializeField] private string _id;
+    [SerializeField] private string _name;
+
+    /*[SerializeField] private GameObject _prefab;
     [SerializeField] private List<string> _ListPropirtes;
     [SerializeField] private Sprite _sprite;
     [SerializeField] private string _loot;
@@ -18,6 +19,6 @@ public class LandInfo : ScriptableObject
     public GameObject prefab => this._prefab;
     public Sprite spriteIcon => this._sprite;
     public string loot => _loot;
-
+*/
 
 }

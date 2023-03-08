@@ -7,6 +7,7 @@ public abstract class AbstractElement
     private Dictionary<Type, AbstractModule> _moduleDictionary = new Dictionary<Type, AbstractModule>();
     public ImageModule ImageModule { get; private set; }
     public DataModule DataModule { get; private set; }
+
     public virtual void Initialize()
     {
         ImageModule = ModuleCreate<ImageModule>();

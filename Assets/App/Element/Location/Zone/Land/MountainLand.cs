@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MountainLand : AbstractLand
 {
-  public override void Initialize()
-   {
-      LootSet<TwoHandSwordWeapon>();
-      
-   }
+    public override void Initialize()
+    {
+        base.Initialize();
+        LootSet<TwoHandSwordWeapon>();
+    }
 }

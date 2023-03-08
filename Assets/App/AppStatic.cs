@@ -6,22 +6,27 @@ using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 public static class AppStatic 
 {
+    public enum Lands
+    {
+        ForestLand,
+        PlainLand,
+        MountainLand
+    }
     private static Dictionary<Type, AbstractDirector> _directorDictionary = new Dictionary<Type, AbstractDirector>();
     public static SceneDirector SceneDirector {get; private set;} 
+    public static ResourceDirector ResourceDirector {get; private set;} 
     public static SectionDirector SectionDirector {get; private set;} 
     public static GameDirector GameDirector {get; private set;}
     public static StateDirector StateDirector { get; private set; }
     public static EventDirector EventDirector { get; private set; }
-    public static ResourceDirector ResourceDirector { get; private set; }
     public static void AppInitialize()
     {
-        Debug.Log("AppInit");
         SceneDirector = DirectorCreate<SceneDirector>();
+        ResourceDirector = DirectorCreate<ResourceDirector>();
         SectionDirector = DirectorCreate<SectionDirector>();
         GameDirector = DirectorCreate<GameDirector>();
         StateDirector = DirectorCreate<StateDirector>();
         EventDirector = DirectorCreate<EventDirector>();
-        ResourceDirector = DirectorCreate<ResourceDirector>();
     }
     private static T DirectorCreate<T>() where T : AbstractDirector, new()
     {

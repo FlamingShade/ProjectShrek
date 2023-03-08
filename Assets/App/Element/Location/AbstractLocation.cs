@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LocationElement : AbstractElement
+public abstract class AbstractLocation : AbstractElement
 {
-    private List<ZoneElement> _zoneList = new List<ZoneElement>();
+    private List<AbstractZone> _zoneList = new List<AbstractZone>();
     public void AllZonesGeneration()
     {
 

@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2702a2298efff17468ab4c562909239b, type: 3}
-  m_Name: MountainLand
+  m_Script: {fileID: 11500000, guid: e10c7261b3bfd9542943c482d6ac71fd, type: 3}
+  m_Name: PileOfBonesInfo
   m_EditorClassIdentifier: 
-  _id: 02
-  _landName: Mountain
-  _prefab: {fileID: 0}
-  _sprite: {fileID: 0}
+  _id: 
+  _name: Forest
