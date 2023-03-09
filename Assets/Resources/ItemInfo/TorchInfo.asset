@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10c7261b3bfd9542943c482d6ac71fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 3df8eea01d059744aae7f6fbf989fd33, type: 3}
   m_Name: TorchInfo
   m_EditorClassIdentifier: 
-  _infoEnum: 0
   _id: 
-  _name: Forest
+  _name: 

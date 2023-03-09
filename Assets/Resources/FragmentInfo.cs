@@ -9,5 +9,9 @@ using UnityEngine;
 public class FragmentInfo : AbstractInfo
 {
     [SerializeField] private string _id;
-    [SerializeField] private string _name;
+    [SerializeField] private string _fragmentName;
+    [SerializeField] private GameObject _fragmentUI;
+
+    public string id => this._id;
+    public string fragmentName => this._fragmentName;
 }

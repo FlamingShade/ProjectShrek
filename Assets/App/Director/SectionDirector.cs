@@ -15,9 +15,10 @@ public class SectionDirector : AbstractDirector
         SectionCreate<AppStartSection>();
         SectionCreate<MainMenuSection>();
         SectionCreate<GlobalMapSection>();
+        SectionCreate<BoneRitualCaveSection>();
+        SectionCreate<AltarCaveSection>();
     }
-
-    public void CurrentSectionSet<T>() where T : AbstractSection
+    public void SectionSet<T>() where T : AbstractSection
     {
         T tempSection = SectionGet<T>();
         CurrentSection = tempSection;

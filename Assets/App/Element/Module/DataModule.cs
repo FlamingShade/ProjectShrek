@@ -12,6 +12,6 @@ public class DataModule : AbstractModule
         base.Initialize();
         _resourceInfoString = hostElement.ToString() + "Info"; 
         dataInfo = AppStatic.ResourceDirector.ResourceInfoGet(_resourceInfoString);
-        Debug.Log($"data info {dataInfo.name}");
+        Debug.Log($"data info {dataInfo.testString}");
     }
 }

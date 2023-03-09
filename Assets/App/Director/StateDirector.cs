@@ -15,6 +15,7 @@ public class StateDirector : AbstractDirector
         _currentState = StateCreate<AppStartState>();
         StateCreate<MainMenuState>();
         StateCreate<GlobalMapState>();
+        StateCreate<BoneRitualCaveState>();
     }
     public T StateCreate<T>() where T : AbstractState, new()
     {

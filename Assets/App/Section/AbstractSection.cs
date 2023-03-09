@@ -28,7 +28,7 @@ public class AbstractSection
         _partDictionary.TryAdd(tempType, tempPart);
         return tempPart as T;
     }
-    private T PartGet<T>() where T : AbstractPart, new()
+    private T PartGet<T>() where T : AbstractPart
     {
         Type tempType = typeof(T);
         if (_partDictionary.TryGetValue(tempType, out AbstractPart tempPart))

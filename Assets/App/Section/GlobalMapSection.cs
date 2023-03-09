@@ -25,6 +25,7 @@ public class GlobalMapSection : AbstractSection
     public override void Activate()
     {
         base.Activate();
+        AppStatic.StateDirector.SwitchState<GlobalMapState>();
         //LocationMaster tempLocationMaster = MasterPart.MasterCreate<LocationMaster>();
         //LocationElement tempLocation = tempLocationMaster.ElementCreate<LocationElement>();
         //tempLocation.ContentGenerate();

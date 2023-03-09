@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FragmentUI (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5715729271304368129, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
+      propertyPath: _fragmentInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c2e540393cc7394cb24be3a335943eb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
 --- !u!224 &298778998 stripped
@@ -505,6 +509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FragmentUI (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5715729271304368129, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
+      propertyPath: _fragmentInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f8557fde26a7d4469b6c21db022faf8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
 --- !u!224 &979351470 stripped
@@ -607,6 +615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FragmentUI (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5715729271304368129, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
+      propertyPath: _fragmentInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 49bf120f67968684b989ddd5f275a8f3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
 --- !u!224 &1002321754 stripped
@@ -861,6 +873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FragmentUI (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5715729271304368129, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
+      propertyPath: _fragmentInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 16be5c4f47e12e649bd84c3b4e555aa3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
 --- !u!224 &1564652806 stripped
@@ -963,6 +979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FragmentUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5715729271304368129, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
+      propertyPath: _fragmentInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 4530942f0781b624e8ceb4127f2fb078, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 043bddbc21c53ab4fa4c8eb2dc10bb2b, type: 3}
 --- !u!224 &1925396166 stripped

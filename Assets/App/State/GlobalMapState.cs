@@ -7,8 +7,8 @@ public class GlobalMapState : AbstractState
     public override void StateEnter()
     {
         base.StateEnter();
-        var tempSection = AppStatic.SectionDirector.SectionGet<GlobalMapSection>();
-        tempSection.LocationGeneration();
+        //var tempSection = AppStatic.SectionDirector.SectionGet<GlobalMapSection>();
+        //tempSection.LocationGeneration();
         Debug.Log($"enter GlobalMapState");
     }
 

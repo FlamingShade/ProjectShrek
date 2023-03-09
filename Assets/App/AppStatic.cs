@@ -6,12 +6,6 @@ using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 public static class AppStatic 
 {
-    public enum Lands
-    {
-        ForestLand,
-        PlainLand,
-        MountainLand
-    }
     private static Dictionary<Type, AbstractDirector> _directorDictionary = new Dictionary<Type, AbstractDirector>();
     public static SceneDirector SceneDirector {get; private set;} 
     public static ResourceDirector ResourceDirector {get; private set;} 
@@ -52,7 +46,8 @@ public static class AppStatic
     public static void AppRun()
     {
         AppStatic.AppInitialize();
-        AppStatic.SectionDirector.CurrentSectionSet<GlobalMapSection>();
-        AppStatic.StateDirector.SwitchState<GlobalMapState>();
+        //AppStatic.SectionDirector.SectionSet<GlobalMapSection>();
+        AppStatic.SectionDirector.SectionSet<BoneRitualCaveSection>();
+        
     }
 }

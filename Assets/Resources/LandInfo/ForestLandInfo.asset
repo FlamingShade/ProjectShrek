@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2702a2298efff17468ab4c562909239b, type: 3}
   m_Name: ForestLandInfo
   m_EditorClassIdentifier: 
-  _infoEnum: 0
+  _testString: forestTestLand
   _id: 
   _name: 

@@ -11,4 +11,9 @@ public class MainMenuSection : AbstractSection
         ScenePart.SceneNameAdd(SceneDirector.SceneName.MainMenuOptionsScene);
         ScenePart.StartingSceneSet(SceneDirector.SceneName.MainMenuScene);
     }
+    public override void Activate()
+    {
+        base.Activate();
+        AppStatic.StateDirector.SwitchState<MainMenuState>();
+    }
 }

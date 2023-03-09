@@ -13,7 +13,8 @@ public class SceneDirector : AbstractDirector
         MainMenuScene,
         MainMenuOptionsScene,
         AppStartScene,
-        GlobalMapScene
+        GlobalMapScene,
+        BoneRitualCaveScene
     }
     public Scene CurrentSceneSet()
     {
