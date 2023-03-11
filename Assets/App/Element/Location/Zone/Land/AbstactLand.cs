@@ -11,6 +11,7 @@ public abstract class AbstractLand : AbstractElement
     public override void Initialize()
     {
         base.Initialize();
+        //hello
     }
     public void LootSet<T>() where T : AbstractItem
     {
