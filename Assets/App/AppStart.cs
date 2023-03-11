@@ -7,6 +7,7 @@ public class AppStart : MonoBehaviour
     public void Start()
     {
         AppStatic.AppRun();
+        //NEW VERSION
     }
 
 }

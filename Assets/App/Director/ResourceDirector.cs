@@ -27,9 +27,9 @@ public class ResourceDirector : AbstractDirector
     }
     public AbstractInfo ResourceInfoGet(string tempInfoName) 
     {
-        Debug.Log($"key {tempInfoName}");
+        //Debug.Log($"key {tempInfoName}");
         _infoDictionary.TryGetValue(tempInfoName, out var tempInfo);
-        Debug.Log($"get {tempInfo}");
+        //Debug.Log($"get {tempInfo}");
         return tempInfo;
     }
 }

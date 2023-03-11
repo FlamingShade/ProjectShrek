@@ -26,7 +26,7 @@ public class FragmentUI : MonoBehaviour, IPointerClickHandler
         var tempNewString = tempString.Remove(tempString.Length - 4);
         _fragmentElement = tempFragmentMaster.ElementCreate(tempNewString);
         //Debug.Log(tempNewString);
-        Debug.Log(_fragmentElement.DataModule.dataInfo.testString);
+        //Debug.Log(_fragmentElement.DataModule.dataInfo.testString);
     }
 
     void Update()

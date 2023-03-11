@@ -30,6 +30,6 @@ public class GlobalMapSection : AbstractSection
         //LocationElement tempLocation = tempLocationMaster.ElementCreate<LocationElement>();
         //tempLocation.ContentGenerate();
         //LandMaster tempLandMaster = MasterPart.MasterCreate<LandMaster>();
-        Debug.Log("MapInitEnd");
+        //Debug.Log("MapInitEnd");
     }
 }

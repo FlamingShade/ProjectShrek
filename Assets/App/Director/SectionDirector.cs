@@ -30,7 +30,7 @@ public class SectionDirector : AbstractDirector
         Type tempType = typeof(T);
         tempSection.Initialize();
         var tempBool = _sectionDictionary.TryAdd(tempType, tempSection);
-        Debug.Log($"{tempBool} {tempType}");
+        //Debug.Log($"{tempBool} {tempType}");
     }
     public T SectionGet<T>() where T : AbstractSection
     {
@@ -46,10 +46,10 @@ public class SectionDirector : AbstractDirector
     }    
     public void OnStateExited()
     {
-        Debug.Log("SectionDirector: some state exited ");
+        //Debug.Log("SectionDirector: some state exited ");
     }
     public void OnStateEntered()
     {
-        Debug.Log("SectionDirector: some state entered ");
+        //Debug.Log("SectionDirector: some state entered ");
     }
 }
